@@ -11,6 +11,40 @@ Pour fabriquer un installateur Windows (.exe) :
 2. Puis : npm run build:win
 3. L’installateur sera créé dans le dossier dist.
 
-À savoir : le jeu utilise Three.js et ses effets graphiques depuis jsDelivr.
+À savoir : le jeu utilise Three.js et ses effets graphiques depuis jsDelivr,
+ainsi que les polices Inter et Outfit de Google Fonts.
 Une connexion Internet est donc nécessaire pour charger la scène 3D.
 La sauvegarde de la partie est conservée localement dans l’application.
+
+COMMANDES PAR DÉFAUT
+Les touches suivent la position physique du clavier : ZQSD sur un clavier
+AZERTY, WASD sur un clavier QWERTY. Tout se change dans Réglages > Contrôles.
+
+  Z Q S D ............ se déplacer (Q à gauche, D à droite)
+  Souris ............. regarder
+  Maj ................ sprinter
+  Espace ............. sauter
+  E / clic gauche .... récolter, couper un arbre (maintenir), alimenter un feu
+  F / clic droit ..... utiliser l’objet en main (manger, poser un feu…)
+  1 à 8 / molette .... choisir un objet de la barre rapide
+  I ou Tab ........... inventaire et artisanat
+  M .................. carte
+  V .................. vue 1re / 3e personne
+  Échap .............. pause
+
+INVENTAIRE ET ARTISANAT
+- 32 emplacements, dont 8 dans la barre rapide (en bas de l’écran).
+- Glisser-déposer pour ranger, Maj + clic pour passer de la barre au sac,
+  double-clic ou clic droit pour utiliser, bouton « Trier » pour regrouper.
+- Recettes : hache en pierre, feu de camp, torche, bandage, brochette grillée
+  (cette dernière se cuisine près d’un feu allumé).
+
+MÉTÉO
+Temps clair, nuages, bruine, pluie, orage (éclairs et tonnerre) et brouillard
+s’enchaînent progressivement. Sous la pluie le sol se mouille, des flaques
+apparaissent, le lac se couvre de ronds et tu finis trempé : un feu de camp
+te sèche et te réchauffe pendant la nuit.
+
+QUALITÉ GRAPHIQUE
+Réglages > Graphismes propose Basse / Moyenne / Haute / Ultra.
+Passe en Basse ou Moyenne si le jeu manque de fluidité.
