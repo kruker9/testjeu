@@ -1,0 +1,16 @@
+LES BRUMES D’ASTRÉA — APPLICATION DE BUREAU
+
+Pour lancer le jeu sur cet ordinateur :
+1. Installe Node.js (version LTS) si ce n’est pas déjà fait.
+2. Ouvre PowerShell dans ce dossier.
+3. Lance : npm install
+4. Puis : npm start
+
+Pour fabriquer un installateur Windows (.exe) :
+1. Lance d’abord : npm install
+2. Puis : npm run build:win
+3. L’installateur sera créé dans le dossier dist.
+
+À savoir : le jeu utilise Three.js et ses effets graphiques depuis jsDelivr.
+Une connexion Internet est donc nécessaire pour charger la scène 3D.
+La sauvegarde de la partie est conservée localement dans l’application.

@@ -1,0 +1,38 @@
+{
+  "name": "les-brumes-dastrea",
+  "version": "1.0.0",
+  "description": "Les Brumes d’Astréa — jeu de survie fantastique",
+  "main": "main.cjs",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "^38.2.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "fr.astrea.brumes",
+    "productName": "Les Brumes d’Astréa",
+    "asar": true,
+    "files": [
+      "index.html",
+      "main.cjs",
+      "preload.cjs",
+      "package.json"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": ["nsis"]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
+}
